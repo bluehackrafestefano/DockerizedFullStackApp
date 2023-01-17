@@ -40,5 +40,7 @@ class ReservationViewSet(ModelViewSet):
         This view should return a list of all the reservations
         for the currently authenticated user.
         """
-        user = self.request.user
-        return Reservation.objects.filter(user=user)
+        # if self.request.user.is_anonymous:
+        #     return []
+        user_id = self.request.user.id
+        return Reservation.objects.filter(user=user_id)

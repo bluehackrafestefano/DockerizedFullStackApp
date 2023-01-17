@@ -28,3 +28,4 @@ stats
 Dockerfile
 .dockerignore
 .gitignore
+db.sqlite3

@@ -4,7 +4,7 @@ from .base import INSTALLED_APPS, MIDDLEWARE, BASE_DIR
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 THIRD_PARTY_APPS = [
     'debug_toolbar',
